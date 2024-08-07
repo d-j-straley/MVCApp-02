@@ -1,3 +1,7 @@
+/*
+© 2024 David James Straley
+*/
+
 using Microsoft.EntityFrameworkCore;
 using MVCApp.Data;
 
