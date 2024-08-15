@@ -18,7 +18,6 @@ namespace MVCApp.Data
         {
             var optionsBuilder = new DbContextOptionsBuilder<MVCAppContext>();
             var connectionString = _configuration.GetConnectionString("DefaultConnection");
-            //optionsBuilder.UseSqlServer("Server=(localdb)\\MSSQLLocalDB;Database=EcommerceDb;Trusted_Connection=True;MultipleActiveResultSets=true");
             optionsBuilder.UseSqlServer(connectionString);
 
             return new MVCAppContext(optionsBuilder.Options);
